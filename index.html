@@ -4,51 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Meu CSS-->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Maria Eduarda | Portfólio</title>
 </head>
 
 <body>
     <header>
-        <!-- NAVBAR -->
         <nav class="navbar">
-            <h2 class="logo">Maria Eduarda 🎀</h2>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="assets/Logo-FundoTransparente.svg" alt="Maria Eduarda" class="logo-img">
+                    <a href="#home">Maria <span>Eduarda</span></a>
+                </div>
 
-            <ul class="menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Início</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <a href="#contato" class="btn-contato">Vamos conversar</a>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 </body>
-
-</html>
-
-
-<body>
-
-
-
-    <section class="banner">
-        <img src="assets/header.gif" alt="banner">
-    </section>
-
-    <section class="hero-text">
-        <h1>Maria Eduarda 🎀</h1>
-        <p>Estagiária em Governança de TI | Front-end em formação</p>
-
-        <div class="botoes">
-            <a href="https://github.com/seuusuario" target="_blank">
-                <button>GitHub</button>
-            </a>
-
-            <a href="https://linkedin.com/in/seuusuario" target="_blank">
-                <button>LinkedIn</button>
-            </a>
-        </div>
-    </section>
-
-
-</body>
-
+<script src="script.js"></script>
 </html>
