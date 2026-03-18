@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #f8d7e1;
+  color: #4b2c35;
+}
+
+header {
+  background-image: url('https://i.pinimg.com/736x/6f/9b/68/6f9b68c4f5c3f1c3b3c1b3e0c8c1f1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.about {
+  background: #fff0f5;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 150px;
+  border-radius: 15px;
+}
+
+button {
+  background: #ffb6c1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contato {
+  background: #fff0f5;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  background: #ffb6c1;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #4b2c35;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #ff8fab;
+}
+
+.curiosidades {
+  padding: 40px;
+  text-align: center;
+}
+
+
+.tecnologias {
+  padding: 40px;
+  text-align: center;
+}
+
+.techs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.techs span {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
