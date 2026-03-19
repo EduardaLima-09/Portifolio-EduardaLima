@@ -168,94 +168,358 @@ body {
 
 /* Acaba meu Header */
 
-.banner {
-    width: 100%;
-    height: 100vh;
-    margin-top: 5.2rem;
-    overflow: hidden;
+#sobre-mim {
+    padding: 80px 0;
+    color: var(--branco);
+    background-color: var(--rosa-claro);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    top: 3rem;
+    gap: 50px;
+    display: grid;
+    padding: 40px;
+    align-items: start;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    grid-template-columns: 1fr 2fr;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('assets/Card-Sobre.svg');
+
     position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.banner-video {
+.about-image {
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid var(--branco);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #e2adbf, #e7b8c8);
+}
+
+.image-placeholder img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
-    object-position: center;
+    border-radius: 80%;
 }
 
-/* imagem (caso vídeo não carregue) */
-
-.banner-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+.about-text {
+    color: var(--branco);
+    font-family: var(--fonte-poppins);
 }
 
-.banner::after {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
+.about-text h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: var(--fonte-dancing);
 }
 
-/* Modo que mostra o vídeo completo (com barras) */
-
-.banner-video.show-full {
-    object-fit: contain !important;
-    background-color: #000;
-    width: 100% !important;
-    height: 100% !important;
+.nome-destaque {
+    font-size: 6.5vh;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    font-family: var(--fonte-dancing);
+    background-color: var(--rosa-forte);
+    -webkit-text-fill-color: transparent;
 }
 
-/* Modo que preenche a tela (pode cortar) */
-.banner-video.fill-screen {
-    object-fit: cover !important;
-    width: 100% !important;
-    height: 100% !important;
+.profissao {
+    opacity: 0.8;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--branco);
+    font-family: var(--fonte-poppins);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.banner-video.zoom-out {
-    transform: translate(-50%, -50%) scale(0.8) !important;
-    /* Diminui o vídeo */
+.descricao {
+    opacity: 0.8;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--branco);
+    font-family: var(--fonte-poppins);
 }
 
-/* CELULAR - diminuir altura da seção */
+/* Acaba a sobre mim */
 
-@media screen and (max-width: 480px) {
-    .banner {
-        height: 50vh;
-        margin-top: 4rem;
-    }
-
-    .banner-video {
-        width: 100%;
-        object-fit: cover;
-        object-position: 50% center;
-    }
+.secao-curiosidades {
+    padding: 60px 10%;
 }
 
-/* CELULAR PEQUENO */
-
-@media screen and (max-width: 375px) {
-    .banner {
-        height: 60vh;
-    }
+.secao-curiosidades h2 {
+    opacity: 0.8;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--branco);
+    font-family: var(--fonte-dancing);
 }
 
-/* TABLET */
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .banner {
-        height: 80vh;
-    }
+.cards-curiosidades {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Acaba a imgem e video */
+.card {
+    width: 340px;
+    padding: 20px;
+    transition: 0.6s;
+    border-radius: 12px;
+    color: var(--grafite);
+    border-left: 5px solid var(--rosa-medio);
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 120px;
+    background-color: var(--rosa-queimado);
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--grafite);
+    font-family: var(--fonte-poppins);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Acaba o curiosidades */
+
+.sessao-formacao {
+    padding: 60px 10%;
+    position: relative;
+    font-family: var(--fonte-poppins);
+    background-color: var(--rosa-forte);
+}
+
+.sessao-formacao h2 {
+    opacity: 0.9;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--branco);
+    font-family: var(--fonte-dancing);
+}
+
+.sessao-formacao .linha-cards {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-formacao {
+    max-width: 80%;
+    min-width: 200px;
+    padding: 20px 16px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--rosa-claro);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.sessao-formacao .card-formacao h4 {
+    opacity: 0.7;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--rosa-forte);
+    font-family: var(--fonte-poppins);
+}
+
+.sessao-formacao .card-formacao p {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: var(--grafite);
+    font-family: var(--fonte-poppins);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sessao-skills {
+    padding: 60px 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-poppins);
+    background-image: url(assets/Card-Sobre.svg);
+}
+
+.sessao-skills h2 {
+    opacity: 0.8;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--branco);
+    font-family: var(--fonte-dancing);
+}
+
+.skills-container {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-linha {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-bloco {
+    max-width: 60%;
+    min-width: 300px;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 20px;
+    background-color: var(--rosa-claro);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.skills-bloco h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--rosa-queimado);
+    font-family: var(--fonte-poppins);
+}
+
+.skills-row {
+    gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-row span {
+    background: var(--rosa-queimado);
+    color: var(--branco);
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -373,5 +637,42 @@ body {
 @media screen and (min-width: 1400px) {
     .nav-container {
         max-width: 1400px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        /* empilha */
+        text-align: center;
+    }
+
+    .about-text h3 {
+        font-size: 24px;
+    }
+
+    .image-placeholder img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h3 {
+        font-size: 20px;
+    }
+
+    .descricao {
+        font-size: 14px;
+    }
+
+    .image-placeholder img {
+        max-width: 200px;
+        /* 👈 imagem menor no celular */
     }
 }
